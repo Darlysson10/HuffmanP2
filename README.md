@@ -6,7 +6,7 @@ Huffman-P2
 	
 	Darlysson Olímpio Nascimento - don@ic.ufal.br;
 	Felipe Pimentel de Cerqueira - fpc@ic.ufal.br;
-	Yuri Fernandes Souza Silva	 - yfss@ic.ufal.br;
+	Yuri Fernandes Souza Silva   - yfss@ic.ufal.br;
 	
 
 	Inicio em:
