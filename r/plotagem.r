@@ -24,8 +24,8 @@ p <- qplot(ylab = "Number of comparations", xlab = "Elements") +
   ggtitle("Lista vs ABB") + 
   theme(plot.title = element_text(size=18, face="bold",hjust=0.5)) +
   #geom_line(data = dat1, aes(x = Number, y = lista), size = 1, color = '#ce0606') + 
-  geom_point(data = dat1, aes(x = Number, y = lista), size = 2, color = '#000000') + 
+  geom_point(data = dat1, aes(x = Number, y = lista), size = 2, color = '#FF0000') + 
   #geom_line(data = dat1, aes(x = Number, y = tree), size = 1, color = '#003366') + 
-  geom_point(data = dat1, aes(x = Number, y = tree), size = 2, color = '#0000CD')
+  geom_point(data = dat1, aes(x = Number, y = tree), size = 2, color = '#0000FF')
 
 print(p)
