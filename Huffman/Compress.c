@@ -52,7 +52,7 @@ int number_of_bytes(double bits){ return ceil(bits/8); }
 void create_header(int trash_size, int tree_size, Huff_node *tree, FILE* out)
 {
 	//printf("TRASH SIZE: %d | TREE SIZE: %d\n.", trash_size, tree_size);
-	unsigned char* bytes = (unsigned char*)malloc(3 * sizeof(unsigned char));
+	unsigned char* bytes = (unsigned char*)malloc(2 * sizeof(unsigned char));
 	bytes[0] = trash_size << 5 | tree_size >> 8;   //trash_size esta representado no inicio do byte, importante joga-lo para os 3 primeiros, destacar >>8 em tree_size para add ao primeiro byte do arquivo trechos que formam o size_tree
 	bytes[1] = tree_size;                          //salva as 8 primeiras posicoes do tree_size
 
@@ -187,7 +187,4 @@ void compress()
 	fclose(in);
 	fclose(out);
 	test();
-	
-		
 }
-
