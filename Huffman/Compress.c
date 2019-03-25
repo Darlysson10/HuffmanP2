@@ -113,7 +113,7 @@ void compress()
 
 
 
-	int i, size, flag = 1;
+	int i, size;
 	unsigned char s;
 	unsigned int shift_bit = 0;
 	long long int freq[256] = {0}; 
@@ -138,7 +138,7 @@ void compress()
 	Huff_node *raiz;
 	raiz = create_tree(heap);
 	
-	create_encoding(raiz, ht, flag, shift_bit, 0);
+	create_encoding(raiz, ht, shift_bit, 0);
 
 	int bits = number_of_bits(ht);
 	int bytes = number_of_bytes(bits);

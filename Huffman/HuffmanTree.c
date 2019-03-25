@@ -86,7 +86,7 @@ Huff_node* create_tree_from_preorder(FILE* in)
 	return tree_node;
 }
 
-void create_encoding(Huff_node *raiz, Huff_hash *ht, int flag, unsigned int shift_bit, int level) //forma as novas representacoes dos bytes
+void create_encoding(Huff_node *raiz, Huff_hash *ht, unsigned int shift_bit, int level) //forma as novas representacoes dos bytes
 {
 	if(raiz->down_left == NULL && raiz->down_right == NULL)
 	{
@@ -97,8 +97,8 @@ void create_encoding(Huff_node *raiz, Huff_hash *ht, int flag, unsigned int shif
 	else
 	{
 		
-		create_encoding(raiz->down_left, ht, 0, (shift_bit<<1), level + 1);
-		create_encoding(raiz->down_right, ht, 0, ((shift_bit<<1) | 1), level + 1);
+		create_encoding(raiz->down_left, ht, (shift_bit<<1), level + 1);
+		create_encoding(raiz->down_right, ht, ((shift_bit<<1) | 1), level + 1);
 		
 	}
 }

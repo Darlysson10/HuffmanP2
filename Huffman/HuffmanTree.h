@@ -49,7 +49,7 @@ Huff_node* create_tree_from_preorder(FILE* in);
  * OBEDECENDO O CONTRATO DO CARACTER DE ESCAPE.
 */
 
-void create_encoding(Huff_node *raiz, struct huff_hash *ht, int flag, unsigned int shift_bit, int level);
+void create_encoding(Huff_node *raiz, Huff_hash *ht, unsigned int shift_bit, int level);
 /*ADICIONA NA HASH, OS VALORES QUE REPRESENTAM A NOVA CODIFICACAO
  * PARA ISSO NAVEGA-SE NA ARVORE ATE ENCONTRAR UMA FOLHA, DANDO SHIFT-BIT E,
  * SOMANDO UMA CASO NAVEGUEMOS PARA A DIREITA
