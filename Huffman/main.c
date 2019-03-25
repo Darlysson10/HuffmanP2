@@ -42,7 +42,7 @@ void presentation()
 	
 	printf("                             ------------- Press any key to start -------------\n\n\n");
 	printf("                                               Developed by:\n");
-	printf("  Darlysson Olímpio Nascimento | Felipe Pimentel de Cerqueira | Yuri Fernandes Souza Silva \n");
+	printf("  Darlysson Olimpio Nascimento | Felipe Pimentel de Cerqueira | Yuri Fernandes Souza Silva \n");
 	getchar();
 }
 

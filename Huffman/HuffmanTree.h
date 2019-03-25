@@ -44,7 +44,7 @@ Huff_node *create_tree(Huff_heap *heap);
  * RETORNANDO O NO RAIZ.
  */
 
-Huff_node* create_tree_from_preorder(FILE* in, int a[]);
+Huff_node* create_tree_from_preorder(FILE* in);
 /* CRIA A ARVORE A PARTIR DE SEU FORMATO EM PRE ORDEM,
  * OBEDECENDO O CONTRATO DO CARACTER DE ESCAPE.
 */

@@ -102,12 +102,12 @@ void decompress()
     bytes = bytes - (tam_arv + 2);  //os bytes da arvore mais os dois do comeco
 
 	Huff_node* raiz;
-	int barras = 0;
-	raiz = create_tree_from_preorder(in, &barras);
+	
+	raiz = create_tree_from_preorder(in);
 
 	///////////////
 
-	bytes -= barras; //retiro as barras que so estavam ali como apoio
+	
 
 	int i, j;
 

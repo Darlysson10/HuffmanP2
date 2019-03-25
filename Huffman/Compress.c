@@ -145,6 +145,8 @@ void compress()
 	int trash = (bytes*8) - bits; //proximo a bits, porem a diferenca me da o lixo
 	
 	int size_of_tree = tree_size(raiz);
+	if (freq[92] > 0) size_of_tree++;
+	if (freq[42] > 0) size_of_tree++;
 
 	create_header(trash, size_of_tree, raiz, out);//CALCULAR LIXO//E TAMANHO DA ARVORE
 

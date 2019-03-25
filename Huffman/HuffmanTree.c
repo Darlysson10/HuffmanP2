@@ -65,14 +65,14 @@ Huff_node *create_tree(Huff_heap *heap)
 	}
 }
 
-Huff_node* create_tree_from_preorder(FILE* in, int *barras)
+Huff_node* create_tree_from_preorder(FILE* in)
 {
 	char byte;
 	short int flag = 1;
 	fscanf(in, "%c", &byte);
-	if(byte == 92)  //barra
+	if(byte == 92)  
 	{
-		barras++;
+		
 		fscanf(in, "%c", &byte);
 		flag = 0;   // faz pular o proximo if de percorrer a arvore, pois indica que tal * é um filho
 	}
@@ -80,8 +80,8 @@ Huff_node* create_tree_from_preorder(FILE* in, int *barras)
 	tree_node = new_huff_node(&byte, 1, NULL, NULL);
 	if (byte == '*' && flag == 1)                                       //significa que ainda n é uma folha, nenhum caso especial, continua criando a arvore
 	{
-		tree_node -> down_left = create_tree_from_preorder(in, barras);
-		tree_node -> down_right = create_tree_from_preorder(in, barras);
+		tree_node -> down_left = create_tree_from_preorder(in);
+		tree_node -> down_right = create_tree_from_preorder(in);
 	}
 	return tree_node;
 }
