@@ -2,23 +2,22 @@
  *
 * # Projeto-P2-Huffman
 	Projeto para Estrutura de Dados (Huffman);
-	Universidade Federal de Alagoas - Instituto de Computação;
+	Universidade Federal de Alagoas - Instituto de ComputaÃ§Ã£o;
 	ECOM-008/COMP208 - Estrutura de Dados.
 
 	
-	Darlysson Olímpio Nascimento - don@ic.ufal.br;
+	Darlysson OlÃ­mpio Nascimento - don@ic.ufal.br;
 	Felipe Pimentel de Cerqueira - fpc@ic.ufal.br;
 	Yuri Fernandes Souza Silva	 - yfss@ic.ufal.br;
 	
 
 	Inicio em:
-	11 de Março de 2019, Maceió - AL, Brasil
+	11 de MarÃ§o de 2019, MaceiÃ³ - AL, Brasil
 */
 
 /////////////START OF C FILE///////////////////
 
-#include <CUnit/CUnit.h>
-#include <CUnit/Basic.h>
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -50,7 +49,6 @@ int main ()
 {
 	presentation();
 	system("clear");
-	int c;
 	int menu;
 	printf("Press '1' to compress, Or press '2' to decompress.\n");
 	scanf("%d", &menu);
